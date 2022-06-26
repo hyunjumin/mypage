@@ -1,101 +1,272 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-		<meta charset="UTF-8">
+    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titan+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap" rel="stylesheet">
     <meta property="og:title" content="민현주 - 프로필 링크">
     <meta property="og:description" content="현주의 프로필 링크 모아보기">
     <meta property="og:image" content="profile.jpg">
-    <script type="text/javascript" src="https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/free/sparta.js"></script>
-    <title>민현주 - 프로필</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script type="text/javascript"
+        src="https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/free/sparta.js"></script>
+    <title>민현주 HyunJu Min - 프로필 Profile</title>
     <style>
         @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+
         * {
-            font-family: "Pretendard",serif;
+            font-family: "Pretendard", serif;
         }
+
         body {
-            background-color: #44398a;
-        }
-
-        .profile {
-            width: 100px;
-            height: 100px;
-
-            border-radius: 100%;
-
-            border: 2px solid white;
-
-            background-image: url('profile.jpg');
-            background-position: center;
-            background-size: cover;
+            background-color: #e5d194;
         }
 
         .main {
             color: white;
             font-size: 20px;
+            text-align: center;
 
             margin-top: 30px;
-            margin-bottom: 10px;
+            /* margin-bottom: 10px; */
         }
-
         .sub {
             color: white;
             font-size: 15px;
 
             margin-top: 0px;
-            margin-bottom: 30px;
+            margin-bottom: 20px;
         }
 
         .wrap {
-            width: 300px;
+            width: 250px;
             margin: 30px auto 0px auto;
-            
+
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
         }
 
-        .wrap > a {
+        .profile {
             width: 300px;
-            height: 50px;
+            height: 250px;
 
-            background-color: white;
-            border-radius: 8px;
-
+            margin-top: 8px;
             margin-bottom: 10px;
 
-            font-size: 14px;
-            font-weight: bold;
-            color: #44398a;
-
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-
-            text-decoration: none;
-
-            box-shadow: 3px 3px 5px 0px black;
+            background-image: url('profile_icon.png');
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
         }
 
-        .wrap > a:hover {
-            background-color: #f2f2f2;
+        .blog {
+            width: 300px;
+            height: 250px;
+            
+            margin-top: 8px;
+            margin-bottom: 10px;
+            
+            background-image: url('blog_icon.png');
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        
+        .cod {
+            width: 300px;
+            height: 240px;
+
+            margin-top: 8px;
+            margin-bottom: 10px;
+
+            
+            background-image: url('cod_icon.png');
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
         }
 
+        .illust {
+            width: 310px;
+            height: 250px;
+            
+            margin-top: 8px;
+            margin-bottom: 10px;
+
+            background-image: url('illust_icon.png');
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .tstory {
+            width: 300px;
+            height: 250px;
+
+            margin-top: 8px;
+            margin-bottom: 10px;
+
+            background-image: url('tstory_icon.png');
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .pro_hover {
+            color: white;
+            
+            font-family: 'Lora', serif;            
+            font-size: 20px;
+        }
+        .cod_hover {
+            color: white;
+            
+            font-family: 'Lora', serif;             
+            font-size: 20px;
+        }
+        .blog_hover {
+            color: white;
+        
+            font-family: 'Lora', serif;            
+            font-size: 20px;
+        }
+        .illust_hover {
+            color: white;
+            
+            font-family: 'Lora', serif;
+            font-size: 20px;
+        }
+        .tstory_hover {
+            color: white;
+
+            font-family: 'Lora', serif;
+            font-size: 20px;
+
+            margin-bottom: 20px;
+        }
+
+        
+        
+        @media ( min-width: 768px ) {
+            
+        }
+        @media ( min-width: 1024px ) {
+            
+            .wrap{
+                width: 1024px;
+                height: max-content;
+
+                background-image: url('back.png');
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+            .profile {
+
+            }
+            .cod {
+                position: static;
+                margin-right: 400px;
+            }
+            .blog {
+                position: static;
+                margin-left: 400px;
+            }
+            .illust {
+                position: static;
+                margin-left: 400px;
+                
+            }
+            .tstory {
+                position: static;
+                margin-right: 400px;
+            }
+
+            .pro_hover {
+                position: static;
+                display: none;
+            }
+            .blog_hover {
+                position: static;
+                margin-left: 400px;
+
+                display: none;
+            }
+            .cod_hover {    
+                position: static;
+                margin-right: 400px;
+
+                display: none;
+            }
+            .illust_hover {
+                position: static;
+                margin-left: 400px;
+            
+                display: none;
+            }
+            .tstory_hover {    
+                position: static;
+                margin-right: 400px;
+
+                display: none;
+
+                width: max-content;
+            }
+
+            .profile:hover + div {
+            
+                display: block;
+            }
+            .blog:hover + div {
+                
+                display: block;
+            }
+            .cod:hover + div {
+                
+                display: block;
+            }
+            .illust:hover + div {
+                
+                display: block;
+            }
+            .tstory:hover + div {
+                
+                display: block;
+            }
+        }
     </style>
 </head>
+
 <body>
-    <div class = "wrap">
-        <div class = "profile"></div>
-        <h1 class = "main">민현주</h1>
-        <p class = "sub">코딩하는 미술인</p>
-        <a target="_blank" href="https://blog.naver.com/c_zuu_">[블로그_일상기록]</a>
-        <a target="_blank" href="https://www.instagram.com/corin2_mi.n/">[인스타그램_코딩&대외활동]</a>
-        <a target="_blank" href="https://www.instagram.com/mi.n_illust/">[인스타그램_그림&작업]</a>
-        <a target="_blank" href="https://joooooo5744.tistory.com/">[티스토리_개발일지]</a>
-	
+    <div class="wrap" style="position: relative;">
+        <h1 class="main">민현주</h1>
+        <p class="sub">코딩하는 미술인</p>
+
+        <a class="profile" target="_blank" href="https://www.instagram.com/_minyunjooce_/"></a>
+        <div class="pro_hover">instagram</div>
+        
+        <a class="blog" target="_blank" href="https://blog.naver.com/c_zuu_"></a>
+        <div class="blog_hover">blog</div>
+        
+        <a class="cod" target="_blank" href="https://www.instagram.com/corin2_mi.n/"></a>
+        <div class="cod_hover">study_instagram</div>
+
+        <a class="illust" target="_blank" href="https://www.instagram.com/mi.n_illust/"></a>
+        <div class="illust_hover">illust_instagram</div>
+
+        <a class="tstory" target="_blank" href="https://joooooo5744.tistory.com/"></a>
+        <div class="tstory_hover">development log</div>
+
     </div>
 </body>
+
 </html>
