@@ -47,7 +47,7 @@
         }
 
         .wrap {
-            width: 250px;
+            width: 350px;
             margin: 30px auto 0px auto;
 
             display: flex;
@@ -57,7 +57,6 @@
         }
         
         .back {
-            width: 390px;
             height: max-content;
 
             background-image: url('back_M.png');
@@ -168,7 +167,85 @@
         
         
         @media ( min-width: 768px ) {
+            .wrap{
+                width: 750px;
+                height: max-content;
+
+                background-image: url('back.png');
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+        
+            .cod {
+                position: static;
+                margin-right: 400px;
+            }
+            .blog {
+                position: static;
+                margin-left: 400px;
+            }
+            .illust {
+                position: static;
+                margin-left: 400px;
+                
+            }
+            .tstory {
+                position: static;
+                margin-right: 400px;
+            }
+
+            .pro_hover {
+                position: static;
+                display: none;
+            }
+            .blog_hover {
+                position: static;
+                margin-left: 400px;
+
+                display: none;
+            }
+            .cod_hover {    
+                position: static;
+                margin-right: 400px;
+
+                display: none;
+            }
+            .illust_hover {
+                position: static;
+                margin-left: 400px;
             
+                display: none;
+            }
+            .tstory_hover {    
+                position: static;
+                margin-right: 400px;
+
+                display: none;
+
+                width: max-content;
+            }
+
+            .profile:hover + div {
+            
+                display: block;
+            }
+            .blog:hover + div {
+                
+                display: block;
+            }
+            .cod:hover + div {
+                
+                display: block;
+            }
+            .illust:hover + div {
+                
+                display: block;
+            }
+            .tstory:hover + div {
+                
+                display: block;
+            }
         }
         @media ( min-width: 1024px ) {
             
